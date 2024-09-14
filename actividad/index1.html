@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con Bootstrap</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+
+     body {
+      background-color: #070a0c; 
+      color: rgb(193, 218, 218);
+    }
+    header {
+      background-color: rgb(151, 158, 202);
+      padding: 20px;
+      text-align: center;
+    }
+    footer {
+      background-color: rgb(148, 128, 196);
+      padding: 10px;
+      text-align: center;
+    }
+    .custom-card{
+        background-color: #aca8eb; 
+        color: #000000; 
+        border-radius: 20px;
+
+    }
+    .btn-primary{
+        background-color: #000000;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header class="row">
+      <div class="col">
+        <h1>MI BANCO</h1>
+      </div>
+    </header>
+
+    <nav class="row">
+      <div class="col">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="row">
+      <div class="col-md-8">
+        <h2>BIENVENIDO</h2>
+        <p>Esta paginas de servicios bancarios te ofrece analizar , crear , bloquear y duplicados de tus cuentas , tragetas bancarias.</p>
+
+        <button class="btn btn-primary">Enviar</button>
+
+        <form class="mt-4">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" class="form-control" id="email" placeholder="Escribe tu correo">
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card custom-card">
+          <div class="card-body">
+            <h5 class="card-title">Tarjeta</h5>
+            <p class="card-text">Si deseas solicitar una tarjeta nos puedes dejar tu informacion y te contactaremos.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="row mt-4">
+      <div class="col custom-tabla">
+        <h3>Contactos</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>SEDE</th>
+              <th>NUMEROS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AREQUIPA</td>
+              <td>054 896524</td>
+            </tr>
+            <tr>
+              <td>LIMA</td>
+              <td>948563430</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="row">
+      <div class="col">
+        <p>&copy; 2024 Mi Banco</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
