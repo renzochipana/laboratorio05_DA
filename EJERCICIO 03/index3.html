@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda en Línea</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Imagen de logotipo -->
+    <a class="navbar-brand" href="#">
+      <img src="logotipo.png" alt="Logotipo" style="width: 100px;">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Categoría 1</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Categoría 2</a></li>
+      </ul>
+      <a href="carrito.html" class="btn btn-outline-primary">Carrito</a>
+    </div>
+  </nav>
+
+  <!-- Carrusel -->
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 producto-destacado" src="produc1.png" alt="Producto destacado 1">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 producto-destacado" src="galleta.png" alt="Producto destacado 2">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <!-- Secciones de Categorías -->
+  <div class="container mt-5">
+    <h2>Categorías Destacadas</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="cat1.png" alt="Productos comestibles">
+          <div class="card-body">
+            <h5 class="card-title">Productos comestibles</h5>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="cat2.png" alt="Productos intimos">
+          <div class="card-body">
+            <h5 class="card-title">Productos intimos</h5>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

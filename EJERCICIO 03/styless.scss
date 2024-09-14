@@ -1,0 +1,51 @@
+$primary-color: #ff0000;
+$secondary-color: #ffffff;
+
+body {
+  background-color: $secondary-color;
+}
+
+.navbar {
+  background-color: $primary-color;
+
+  .nav-link, .navbar-brand {
+    color: $secondary-color;
+
+    &:hover {
+      color: darken($secondary-color, 20%);
+    }
+  }
+
+  .btn-outline-primary {
+    border-color: $secondary-color;
+    color: $secondary-color;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+  }
+
+  .logo {
+    height: 50px; // Ajusta la altura según tus necesidades
+    width: auto;
+  }
+}
+
+.carousel-item img {
+  height: 100px; // Ajusta la altura según tus necesidades
+  object-fit: cover;
+  width: 100%;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
