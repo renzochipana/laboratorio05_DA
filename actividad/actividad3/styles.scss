@@ -1,0 +1,64 @@
+// Definir variables de colores
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$hover-color: darken($primary-color, 10%);
+
+// Estilos personalizados para el menú de navegación
+.navbar {
+    background-color: $secondary-color;
+    
+    .navbar-brand {
+        color: rgb(252, 74, 74);
+    }
+
+    .nav-link {
+        color: rgb(237, 162, 162);
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: $secondary-color;
+        
+        .dropdown-item {
+            color: white;
+            &:hover {
+                background-color: $hover-color;
+            }
+        }
+    }
+}
+
+// Animaciones con Sass
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-collapse {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+// Animación para el menú desplegable
+@keyframes dropdownSlide {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .dropdown-menu {
+    animation: dropdownSlide 0.3s ease;
+  }
+  

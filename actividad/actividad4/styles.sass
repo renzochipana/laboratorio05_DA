@@ -1,0 +1,68 @@
+// Definir variables para personalización
+$primary-color: #007bff;    // Color principal
+$secondary-color: #6c757d;  // Color secundario
+$light-color: #f8f9fa;     // Color claro para el fondo
+
+// Estilos para el encabezado
+header {
+    background-color: $light-color;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .navbar-brand {
+        color: $primary-color;
+    }
+
+    .nav-link {
+        color: $primary-color;
+        &:hover {
+            color: darken($primary-color, 15%);
+        }
+    }
+}
+
+// Estilos para el llamado a la acción
+.hero {
+    background-color: $primary-color;
+    color: white;
+    padding: 2rem 0;
+
+    .btn-light {
+        background-color: white;
+        color: $primary-color;
+        &:hover {
+            background-color: $light-color;
+        }
+    }
+}
+
+// Estilos para las características destacadas
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+// Estilos para los testimonios
+blockquote {
+    border-left: 4px solid $primary-color;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+// Estilos para el pie de página
+footer {
+    background-color: $secondary-color;
+    color: white;
+    padding: 1rem 0;
+
+    a {
+        color: white;
+        &:hover {
+            color: lighten($secondary-color, 20%);
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.navbar {
+  background-color: #6c757d;
+}
+.navbar .navbar-brand {
+  color: rgb(252, 74, 74);
+}
+.navbar .nav-link {
+  color: rgb(237, 162, 162);
+}
+.navbar .nav-link:hover {
+  color: #0062cc;
+}
+.navbar .dropdown-menu {
+  background-color: #6c757d;
+}
+.navbar .dropdown-menu .dropdown-item {
+  color: white;
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #0062cc;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar-collapse {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dropdown-menu {
+  animation: dropdownSlide 0.3s ease;
+}/*# sourceMappingURL=styles.css.map */
